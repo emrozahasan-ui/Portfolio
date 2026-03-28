@@ -4,54 +4,166 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emroz Ahasan | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- HEADER -->
-    <header>
-        <h1>Emroz Ahasan</h1>
-        <p>Computer Operator | Data & Automation Enthusiast</p>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+    <!-- LEFT SIDEBAR -->
+    <aside class="sidebar">
+        <div class="sidebar-top">
+            <!-- CARTOON CHARACTER -->
+            <div class="character" id="sidebar-character" data-section="about" aria-hidden="true">
+                <div class="character-body">
+                    <div class="head">
+                        <div class="face">
+                            <div class="eyes">
+                                <div class="eye left-eye"><div class="pupil"></div></div>
+                                <div class="eye right-eye"><div class="pupil"></div></div>
+                            </div>
+                            <div class="smile"></div>
+                        </div>
+                        <div class="hair"></div>
+                    </div>
+                    <div class="torso">
+                        <div class="arm left-arm"></div>
+                        <div class="arm right-arm waving"></div>
+                        <div class="shirt-text">{"dev"}</div>
+                    </div>
+                </div>
+            </div>
+
+            <h1 class="name">Emroz<br>Ahasan</h1>
+            <h2 class="role">Computer Operator &<br>AI Automation Enthusiast</h2>
+            <p class="location">📍 Chattogram, Bangladesh</p>
+        </div>
+
+        <nav class="sidebar-nav">
+            <a href="#about" class="nav-link active">
+                <span class="nav-line"></span>
+                <span class="nav-text">About</span>
+            </a>
+            <a href="#skills" class="nav-link">
+                <span class="nav-line"></span>
+                <span class="nav-text">Skills</span>
+            </a>
+            <a href="#projects" class="nav-link">
+                <span class="nav-line"></span>
+                <span class="nav-text">Projects</span>
+            </a>
+            <a href="#contact" class="nav-link">
+                <span class="nav-line"></span>
+                <span class="nav-text">Contact</span>
+            </a>
         </nav>
-    </header>
 
-    <!-- ABOUT -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am a computer operator based in Chattogram, Bangladesh. I specialize in MS Office, data management, online research, and using AI tools to automate everyday tasks efficiently.</p>
-    </section>
+        <div class="sidebar-bottom">
+            <a href="mailto:ahasanemroz@gmail.com" class="social-link">Email</a>
+            <a href="https://github.com/emrozahasan-ui" class="social-link">GitHub</a>
+        </div>
+    </aside>
 
-    <!-- SKILLS -->
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>MS Word & Excel (Formulas, Pivot Tables, Charts)</li>
-            <li>HTML & CSS</li>
-            <li>Data Entry & Management</li>
-            <li>Online Research</li>
-            <li>AI Tools — ChatGPT, Gemini</li>
-            <li>Email Management — Gmail, Outlook</li>
-        </ul>
-    </section>
+    <!-- RIGHT MAIN CONTENT -->
+    <main class="main-content">
 
-    <!-- PROJECTS -->
-    <section id="projects">
-        <h2>Projects</h2>
-        <p>Coming soon...</p>
-    </section>
+        <!-- ABOUT -->
+        <section id="about" class="section">
+            <p class="section-tag">// 01. about me</p>
+            <h2 class="section-title">Hello, World! 👋</h2>
+            <div class="about-text">
+                <p>I'm a <span class="highlight">Computer Operator</span> based in Chattogram, Bangladesh. I specialize in making computers work <em>harder</em> so people can work <em>smarter</em>.</p>
+                <p>I work with MS Office, data management, and AI tools like <span class="highlight">ChatGPT & Gemini</span> to automate repetitive tasks and solve everyday problems efficiently.</p>
+                <p>I believe in one thing — <span class="highlight">quantity of skills + speed of execution</span> beats everything else. I learn fast, adapt fast, and deliver fast.</p>
+            </div>
+            <a href="#contact" class="cta-btn">Hire Me →</a>
+        </section>
 
-    <!-- CONTACT -->
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>📞 +8801560035196</p>
-        <p>📧 ahasanemroz@gmail.com</p>
-        <p>📍 North Agrabad, Chattogram, Bangladesh</p>
-    </section>
+        <!-- SKILLS -->
+        <section id="skills" class="section">
+            <p class="section-tag">// 02. skills</p>
+            <h2 class="section-title">What I Work With</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <span class="skill-num">01</span>
+                    <h3>MS Office Suite</h3>
+                    <p>Word, Excel (Formulas, Pivot Tables, Charts), Outlook — daily professional use</p>
+                </div>
+                <div class="skill-card">
+                    <span class="skill-num">02</span>
+                    <h3>HTML & CSS</h3>
+                    <p>Building structured, responsive websites from scratch</p>
+                </div>
+                <div class="skill-card">
+                    <span class="skill-num">03</span>
+                    <h3>AI Tools</h3>
+                    <p>ChatGPT, Gemini — research, writing, and workflow automation</p>
+                </div>
+                <div class="skill-card">
+                    <span class="skill-num">04</span>
+                    <h3>Data Management</h3>
+                    <p>Data entry and management with 99% accuracy, structured reporting</p>
+                </div>
+                <div class="skill-card">
+                    <span class="skill-num">05</span>
+                    <h3>Online Research</h3>
+                    <p>Fast, structured research following guidelines and formats</p>
+                </div>
+                <div class="skill-card">
+                    <span class="skill-num">06</span>
+                    <h3>Communication</h3>
+                    <p>Email management, professional writing in English & Bangla</p>
+                </div>
+            </div>
+        </section>
 
+        <!-- PROJECTS -->
+        <section id="projects" class="section">
+            <p class="section-tag">// 03. projects</p>
+            <h2 class="section-title">Things I've Built</h2>
+            <div class="projects-list">
+                <div class="project-card coming">
+                    <div class="project-top">
+                        <span class="project-icon">🚧</span>
+                        <span class="project-status">Coming Soon</span>
+                    </div>
+                    <h3>AI Email Writer</h3>
+                    <p>Type a situation — get a professional email instantly using ChatGPT API.</p>
+                    <div class="project-tags">
+                        <span>HTML</span><span>CSS</span><span>ChatGPT API</span>
+                    </div>
+                </div>
+                <div class="project-card coming">
+                    <div class="project-top">
+                        <span class="project-icon">🚧</span>
+                        <span class="project-status">Coming Soon</span>
+                    </div>
+                    <h3>Excel Formula Generator</h3>
+                    <p>Describe what you need — get the exact Excel formula with explanation.</p>
+                    <div class="project-tags">
+                        <span>HTML</span><span>CSS</span><span>AI</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="section">
+            <p class="section-tag">// 04. contact</p>
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="contact-desc">I am currently <span class="highlight">open to work</span> and available to join immediately. Whether you have a job opportunity or just want to say hi — my inbox is always open.</p>
+
+            <div class="contact-links">
+                <a href="mailto:ahasanemroz@gmail.com" class="contact-btn">📧 Send Email</a>
+                <a href="tel:+8801560035196" class="contact-btn outline">📞 Call Me</a>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>Built by <span class="highlight">Emroz Ahasan</span> with HTML & CSS · 2026</p>
+        </footer>
+
+    </main>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
