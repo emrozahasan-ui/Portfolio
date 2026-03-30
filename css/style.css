@@ -603,3 +603,65 @@ body {
         grid-template-columns: 1fr;
     }
 }
+/* ── MOBILE RESPONSIVE ── */
+@media (max-width: 768px) {
+
+    body {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding: 40px 24px;
+        border-right: none;
+        border-bottom: 1px solid var(--navy-lighter);
+        text-align: center;
+        align-items: center;
+    }
+
+    .sidebar-top {
+        align-items: center;
+    }
+
+    .sidebar-nav {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .nav-line {
+        display: none;
+    }
+
+    .sidebar-bottom {
+        flex-direction: row;
+        justify-content: center;
+        gap: 24px;
+        margin-top: 16px;
+    }
+
+    .main-content {
+        margin-left: 0;
+        padding: 0 24px;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section {
+        min-height: auto;
+        padding: 60px 0;
+    }
+
+    .contact-links {
+        flex-direction: column;
+    }
+
+    .contact-btn {
+        text-align: center;
+    }
+}
